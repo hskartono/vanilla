@@ -1,0 +1,177 @@
+/* PLUGIN BOOTSTRAP */
+
+.date {
+    margin-bottom: 5px;
+}
+.bootstrap-datetimepicker-widget table th,
+.bootstrap-datetimepicker-widget table td {
+	border: none;	 
+	background-color: transparent;
+	color: #000;
+}
+.input-group span[data-toggle="modal"]:hover {
+    cursor: pointer;
+}
+.input-daterange input[type='text'] {
+    text-align: left;
+}
+
+/* PAGINATION */
+
+.pagination {
+    display: inline;    
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+    background-color: #eee;
+    border-color: #ddd;
+    color: #777;
+}
+.pagination > li > a,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+    color: #777;
+}
+
+/* FORM */
+
+.form-group label.control-label {
+    text-align: left;
+    font-weight: 100;
+}
+.form-group input[type='text'],
+.form-group select {
+    text-transform: none;
+}
+.modal-header {
+    cursor: move;
+}
+.control-label,
+.form-control-static {
+    font-size: 12px;
+}
+
+/* TAB */
+
+.tab-content {
+    min-height: 200px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav > li[role='presentation'] > a {    
+    background-color: #eee;
+    padding: 0px 10px;
+}
+.nav-tabs > li > a {
+    color: #8a8a8a;
+    border-color: #eee #eee #ddd;
+}
+.nav-tabs > li > a:hover {
+    background-color: #fff;
+    color: #4d4d4d;
+    border-color: #ddd #ddd #ddd;
+}
+.nav > li[class='active'] > a {
+    color: #4d4d4d;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 10px;
+    display: inline;
+}
+.breadcrumb li:not(.active) {
+    color: #c0c0c0;
+}
+.breadcrumb li.active {
+    font-weight: bold;
+}
+.breadcrumb > li + li:before {    
+  
+}
+
+/* NAVBAR */
+
+.navbar-default {
+    background-color: #fff;    
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);      
+}
+.navbar {    
+    margin-bottom: 5px;
+}
+
+/* NAV */
+
+.nav>li.dropdown>a {
+    color: #777;
+}
+.nav>li.dropdown>a:focus, 
+.nav>li.dropdown>a:hover {
+    text-decoration: none;
+    background-color: #EC7263;
+    color: #fff;
+}
+.nav .open>a, 
+.nav .open>a:focus, 
+.nav .open>a:hover {
+    background-color: rgba(0, 0, 0, 0);   
+}
+
+/* BUTTON */
+
+button.btn-default.btn-sm,
+a.btn-default.btn-sm
+/*.action button.btn-default,
+.action a.btn-default*/ {
+    color: #fff;
+    background-color: #EC7263;
+    border-color: #EC7263;    
+}
+button.btn-default.btn-sm:hover,
+button.btn-default.btn-sm:focus,
+a.btn-default.btn-sm:hover,
+a.btn-default.btn-sm:focus,
+.action button.btn-default:hover,
+.action button.btn-default:focus,
+.action a.btn-default:hover,
+.action a.btn-default:focus {
+    color: #fff;
+    background-color: #d95a4b;
+    border-color: #d95a4b;
+}
+
+/* PANEL */
+
+.panel {
+    margin-bottom: 15px;
+}
+
+/* WELL */
+
+.well {    
+
+}
+
+/* MODAL */
+
+.modal {
+	z-index: 10000;
+}
+.modal-backdrop {
+	z-index: 9999;
+}

@@ -1,0 +1,58 @@
+/* vendor prefix */
+@import "../../bower_components/LESS-Prefixer/prefixer.less";
+
+/* css for internet explorer version <= 8 */
+@import 'ie.less';
+
+/* font settings */
+@font-face {
+	font-family: 'pacificoregular';
+	src: url('../font/pacifico/pacifico-webfont.eot');
+	src: url('../font/pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/pacifico/pacifico-webfont.woff2') format('woff2'),
+		 url('../font/pacifico/pacifico-webfont.woff') format('woff'),
+		 url('../font/pacifico/pacifico-webfont.ttf') format('truetype'),
+		 url('../font/pacifico/pacifico-webfont.svg#pacificoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* use this parameter for change theme */
+@theme: 1;
+
+.theme01() when (@theme = 1) {
+	@import 'general01.less';
+	@import 'table01.less';	
+	@import 'bootstrap-theme01.css';
+	@import 'sm-clean01.css';
+}
+.theme02() when (@theme = 2) {
+	@import 'general02.less';
+	@import 'table02.less';
+	@import 'bootstrap-theme02.css';
+	@import 'sm-clean02.css';
+}
+.theme03() when (@theme = 3) {
+	@import 'general03.less';
+	@import 'table03.less';
+	@import 'bootstrap-theme03.css';
+	@import 'sm-clean03.css';
+}
+.theme04() when (@theme = 4) {
+	@import 'general04.less';
+	@import 'table04.less';
+	@import 'bootstrap-theme04.css';
+	@import 'sm-clean04.css';
+}
+.theme05() when (@theme = 5) {
+	@import 'general05.less';
+	@import 'table05.less';
+	@import 'bootstrap-theme05.css';
+	@import 'sm-clean05.css';
+}
+
+.theme01();
+.theme02();
+.theme03();
+.theme04();
+.theme05();

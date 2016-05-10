@@ -1,0 +1,90 @@
+<button type="button" class="btn btn-default btn-sm" id="btn_toggle_div_search">
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+</button>
+
+<!-- form search -->
+<div class="well well-sm" id="own_div_search">    
+    <form method="get" action="#" class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-1">Label <span class="pull-right">&nbsp;:</span></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control input-sm"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-1">Label <span class="pull-right">&nbsp;:</span></label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control input-sm"/>
+            </div>
+        </div>
+
+        <div class="row">                                    
+            <div class="col-sm-3 col-sm-offset-1">
+                <button type="submit" class="btn btn-default btn-sm">Submit</button>
+            </div>  
+        </div>
+    </form>
+</div>
+
+<hr/>
+
+<!-- paging top -->
+<div class="row own_action_button">
+    <div class="col-xs-12">
+        <own-paging></own-paging>
+    </div>
+</div>
+
+<!-- list data -->
+<script>
+    $(document).ready(function(){
+        $(".action button[type='button']").click(function(){
+            parent.removeModal();
+        });
+    });
+</script>
+<br/>
+<table class="table_list table-hover">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Heading</th>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="action">            
+                <button type="button" class="btn btn-default btn-xs">Select</button>
+            </td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td class="action">
+                <button type="button" class="btn btn-default btn-xs">Select</button>
+            </td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td class="action">
+                <button type="button" class="btn btn-default btn-xs">Select</button>
+            </td>
+            <td>Data</td>
+            <td>Data</td>
+            <td>Data</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- paging bottom -->
+<div class="row own_action_button">
+    <div class="col-xs-12">
+        <own-paging></own-paging>
+    </div>
+</div>

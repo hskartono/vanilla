@@ -1,0 +1,1059 @@
+<div class="alert alert-danger">
+    <p>Field is required.</p>
+</div>
+
+<form method="post" action="#" class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Label (string) <span class="pull-right">&nbsp;:</span></label>              
+        <div class="col-sm-3">
+            <p class="form-control-static">Value</p>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Label (currency) <span class="pull-right">&nbsp;:</span></label>         
+        <div class="col-sm-3">
+            <p class="form-control-static number own_currency_symbol">90000000</p>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Text <i class="fa fa-circle own_require"></i> <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control input-sm"/>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Autocomplete <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <script>
+                $(document).ready(function(){                    
+                    $("#tags").autocomplete({
+                      source: [
+						  "ActionScript",
+						  "AppleScript",
+						  "ASP",
+						  "BASIC",
+						  "C",
+						  "C++",
+						  "Clojure",
+						  "COBOL",
+						  "ColdFusion",
+						  "Erlang",
+						  "Fortran",
+						  "Groovy",
+						  "Haskell",
+						  "Java",
+						  "JavaScript",
+						  "Lisp",
+						  "Perl",
+						  "PHP",
+						  "Python",
+						  "Ruby",
+						  "Scala",
+						  "Scheme"
+						]
+                    });
+                });
+            </script>
+            <input type="text" class="form-control input-sm" id="tags"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Email <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="email" class="form-control input-sm"/>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Number <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="number" class="form-control input-sm"/>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Currency <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control input-sm currency_input"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Readonly <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control input-sm" readonly="readonly"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Disabled <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control input-sm" disabled="disabled"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Combobox <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <select class="form-control input-sm">
+                <option value="">Show All</option>
+            </select>
+        </div>
+    </div>
+
+    <fieldset disabled>
+        <div class="form-group">
+            <label class="control-label col-sm-3">Disabled Combobox <span class="pull-right">&nbsp;:</span></label>
+            <div class="col-sm-3">
+                <select class="form-control input-sm">
+                    <option value="">Show All</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Combobox Search <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <select class="form-control input-sm combo_search">
+                <option value=""></option>
+                <option value="001">001 - Salman</option>
+                <option value="002">002 - Achmad</option>
+                <option value="003">003 - Muchlis</option>
+                <option value="004">004 - Alrasyid</option>
+                <option value="005">005 - Trio</option>
+                <option value="006">006 - Ferdinan</option>
+                <option value="007">007 - Simamora</option>
+                <option value="008">008 - Bayu</option>
+                <option value="009">009 - Santoso</option>
+                <option value="010">010 - Adi</option>
+                <option value="011">011 - Wijaya</option>
+                <option value="012">012 - Yuli</option>
+                <option value="013">013 - Andika</option>
+                <option value="014">014 - Rosa</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Popup <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <script>
+                $(document).ready(function(){                                           
+                    $("#popup1").click(function() { 
+                        showPopup('popupmaster.html#/popup', 'Function title');
+                    });                                        
+                });
+            </script>
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control">
+                <span class="input-group-addon" id="popup1" data-toggle="modal">
+                    <span class="glyphicon glyphicon-credit-card"></span>                                        
+                </span>                                    
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <script>
+            $(document).ready(function(){                                    
+                yearPicker('yearpicker');
+            });
+        </script>
+        <label class="control-label col-sm-3">Year Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm date" id="yearpicker">
+                <input type="text" class="form-control" value="1991"/>                                                                        
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>                                        
+                </span>                        
+            </div>
+        </div>
+    </div>
+       
+    <div class="form-group">
+        <script>
+            $(document).ready(function(){                                    
+                monthYearPicker('monthyearpicker');
+            });
+        </script>
+        <label class="control-label col-sm-3">Month Year Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm date" id="monthyearpicker">
+                <input type="text" class="form-control" value="march/1991"/>                                                                        
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>                                        
+                </span>                        
+            </div>
+        </div>
+    </div>
+       
+    <div class="form-group">
+        <script>
+            $(document).ready(function(){                                    
+                calenderTimePicker('datetimepicker1');                                   
+            });
+        </script>
+        <label class="control-label col-sm-3">Datetime Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm date" id="datetimepicker1">
+                <input type="text" class="form-control" value="31/03/1991 01:15"/>                                                                        
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>                                        
+                </span>                        
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">  
+        <script>
+            $(document).ready(function(){
+                calenderPicker('datepicker1');                                    
+            });
+        </script>
+        <label class="control-label col-sm-3">Date Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm date" id="datepicker1">
+                <input type="text" class="form-control" value="31/03/1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>                                                    
+        </div>                            
+    </div>
+
+    <div class="form-group">
+        <script>                                
+            $(document).ready(function(){                                    
+                yearPickerRange('yearpickerrange1','yearpickerrange2');                                    
+            });
+        </script>
+        <label class="control-label col-sm-3">Range Year Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <div class="input-group input-group-sm date" id="yearpickerrange1">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="form-control" value="1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>                                                                                                
+        </div>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm date" id="yearpickerrange2">
+                <span class="input-group-addon">until</span>
+                <input type="text" class="form-control" value="1992"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+       
+    <div class="form-group">
+        <script>                                
+            $(document).ready(function(){                                    
+                monthYearPickerRange('monthyearpickerrange1','monthyearpickerrange2');                                    
+            });
+        </script>
+        <label class="control-label col-sm-3">Range Month Year Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <div class="input-group input-group-sm date" id="monthyearpickerrange1">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="form-control" value="march/1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>                                                                                                
+        </div>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm date" id="monthyearpickerrange2">
+                <span class="input-group-addon">until</span>
+                <input type="text" class="form-control" value="april/1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+       
+    <div class="form-group">
+        <script>                                
+            $(document).ready(function(){                                    
+                calenderTimePickerRange('datetimepickerrange1','datetimepickerrange2');                                    
+            });
+        </script>
+        <label class="control-label col-sm-3">Range Datetime Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <div class="input-group input-group-sm date" id="datetimepickerrange1">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="form-control" value="31/03/1991 01:15"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>                                                                                                
+        </div>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm date" id="datetimepickerrange2">
+                <span class="input-group-addon">until</span>
+                <input type="text" class="form-control" value="31/03/1991 01:30"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <script>                                
+            $(document).ready(function(){                                    
+                calenderPickerRange('datepickerrange1','datepickerrange2');                                    
+            });
+        </script>
+        <label class="control-label col-sm-3">Range Date Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <div class="input-group input-group-sm date" id="datepickerrange1">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="form-control" value="30/03/1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>                                                                                                
+        </div>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm date" id="datepickerrange2">
+                <span class="input-group-addon">until</span>
+                <input type="text" class="form-control" value="31/03/1991"/>
+                <span class="input-group-addon">                                        
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Range Combo <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3 own_range">            
+            <select class="form-control input-sm">
+                <option value="">Show All</option>
+            </select>                                                                                                
+        </div>
+        <div class="col-sm-3">
+            <select class="form-control input-sm">
+                <option value="">Show All</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Range Input <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3 own_range">            
+            <input type="text" class="form-control"/>                                                                                               
+        </div>
+        <div class="col-sm-3">
+            <input type="text" class="form-control"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Range Combo Label <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-6">
+            <div class="input-group input-group-sm">                                    
+                <span class="input-group-addon">from</span>
+                <select class="form-control own_input_right">
+                    <option value="">Show All</option>
+                </select>
+                <span class="input-group-addon">to</span>
+                <select class="form-control own_input_left">
+                    <option value="">Show All</option>
+                </select>                                                                         
+            </div>
+        </div>
+    </div>    
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Range Input Label <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-6">
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="form-control own_input_right"/>
+                <span class="input-group-addon">to</span>
+                <input type="text" class="form-control own_input_left"/>                                                                        
+            </div>
+        </div>
+    </div>              
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Input Label Right <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control"/>                                    
+                <span class="input-group-addon">label</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Input Label Left <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon">label</span>
+                <input type="text" class="form-control"/>                                                                        
+            </div>
+        </div>
+    </div>   
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Input Checkbox <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control"/>                                    
+                <span class="input-group-addon">
+                    <input type="checkbox"/>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Input Button <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Sync</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Clock Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm clockpicker">
+                <input type="text" class="form-control"/>                                                                        
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>                                        
+                </span>                        
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Clock Picker am/pm <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">                                
+            <div class="input-group input-group-sm clockpickerampm">
+                <input type="text" class="form-control"/>                                                                        
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>                                        
+                </span>                        
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-sm-3">Color Picker <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <script>
+                $(document).ready(function(){       
+                    colorPicker('color_picker');                   
+                });
+            </script>
+            <div class="input-group input-group-sm" id="color_picker">
+                <input type="text" class="form-control" value="#06ccd9"/>
+                <span class="input-group-addon"><i></i></span>                                    
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Checkbox <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <div class="checkbox">
+                <label><input type="checkbox"/> Check me out</label>
+            </div>
+        </div>     
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Disabled Checkbox <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <div class="checkbox disabled">
+                <label><input type="checkbox" disabled="disabled"/> Check me out</label>
+            </div>
+        </div>
+    </div>                                                
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Radio <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadios" value="option1" checked="checked"/> Option 1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optionsRadios" value="option2"/> Option 2
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Disabled Radio <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">            
+            <label class="radio-inline disabled">
+                <input type="radio" name="optionsRadiosD" value="option1" disabled="disabled" checked="checked"/> Option 1
+            </label>
+            <label class="radio-inline disabled">
+                <input type="radio" name="optionsRadiosD" value="option2" disabled="disabled"/> Option 2
+            </label>            
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Attachment <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+           	<script>
+				$(document).ready(function(){   
+					fileStyle("f1");
+				});
+			</script>
+            <input type="file" id="f1"/>
+        </div>
+    </div>        
+
+    <div class="form-group">
+        <label class="control-label col-sm-3">Textarea <span class="pull-right">&nbsp;:</span></label>
+        <div class="col-sm-3">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </div>                                                                                                           
+
+    <!-- table add row -->
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+                
+        <script>
+            $(document).ready(function(){                                
+                fileStyle('file1');
+                fileStyle('file2');
+            });                                    
+        </script>
+        <strong>Title Detail1</strong>
+        <table class="table_add_row table-hover">
+            <thead>
+                <tr>						
+                    <th>&nbsp;</th>
+                    <th>Heading1</th>
+                    <th>Heading2</th>
+                    <th>Heading3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="action">
+                        <button type="button" class="btn btn-default btn-xs" title="Delete">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                    <td><input type="file" id="file1"/></td>
+                    <td>
+                        <script>
+                            $(document).ready(function(){                                           
+                                $("#popup2").click(function() { 
+                                    showPopup('popupmaster.html#/popup','Function title');                                            
+                                });                                        
+                            });
+                        </script>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon" id="popup2" data-toggle="modal">
+                                <span class="glyphicon glyphicon-credit-card"></span>                                        
+                            </span>                                    
+                        </div>
+                    </td>
+                    <td><input type="text" class="form-control input-sm"/></td>
+                </tr>
+                <tr>
+                    <td class="action">
+                        <button type="button" class="btn btn-default btn-xs" title="Delete">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                    <td><input type="file" id="file2"/></td>
+                    <td>
+                        <script>
+                            $(document).ready(function(){                                           
+                                $("#popup3").click(function() { 
+                                    showPopup('popupmaster.html#/popup','Function title');                                            
+                                });                                        
+                            });
+                        </script>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control">
+                            <span class="input-group-addon" id="popup3" data-toggle="modal">
+                                <span class="glyphicon glyphicon-credit-card"></span>                                        
+                            </span>                                    
+                        </div>
+                    </td>
+                    <td><input type="text" class="form-control input-sm"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-default btn-sm">Add row</button>
+    
+        </div>
+    </div> 
+    <!-- /table add row -->
+    
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">                        	
+           
+            <strong>Title Detail2</strong>
+            <table class="table_add_row table-hover">
+                <thead>
+                    <tr>						
+                        <th>&nbsp;</th>
+                        <th>Heading1</th>
+                        <th>Heading2</th>
+                        <th>Heading3</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                    <tr ng-repeat="counter in counters">
+                        <td class="action">
+                            <button type="button" class="btn btn-default btn-xs" title="Delete">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </button>
+                        </td>      
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong><i class="fa fa-circle own_require"></i></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label3:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label4:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label5:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label6:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label7:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label8:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong></div>
+                                        <div class="col-sm-12">                                                          	                                                                 																					
+											<div class="input-group input-group-sm date" id="{{ 'datepicker_td2' + $index }}" ng-click="calender('datepicker_td2' + $index)">
+												<input type="text" class="form-control" value="31/03/1991"/>
+												<span class="input-group-addon">                                        
+													<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>                                                    											
+                                        </div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>                                                     
+                                        <div class="col-sm-12">
+                                            <div class="input-group input-group-sm">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon" id="popup27" data-toggle="modal">
+                                                    <span class="glyphicon glyphicon-credit-card"></span>                                        
+                                                </span>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                        
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label3:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label4:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div>                                                        
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label5:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                      
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                       
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                      
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label3:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                      
+                            </div>
+                        </td>                    
+                    </tr>                    
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-default btn-sm">Add row</button>
+               
+        </div>
+    </div> 
+    
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+        
+            <script>
+                $(document).ready(function(){
+                    tableResponsive('input_table');					
+                });
+            </script>
+            
+            <strong>Title Detail3</strong>
+            <table class="rwd_table table-hover" id="input_table">
+                <thead>
+                    <tr>						
+                        <th></th>
+                        <th>Heading1</th>
+                        <th>Heading2</th>
+                        <th>Heading3</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                    <tr ng-repeat="counter in counters">
+                        <td class="action">
+                            <button type="button" class="btn btn-default btn-xs" title="Delete">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </button>
+                        </td>      
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label3:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label4:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label5:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label6:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label7:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                                <div class="col-sm-4 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label8:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div> 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong></div>
+                                        <div class="col-sm-12">                                                                            	
+											<div class="input-group input-group-sm date" id="datepicker_td3{{$index}}" ng-click="calender('datepicker_td3' + $index)">
+												<input type="text" class="form-control" value="31/03/1991"/>
+												<span class="input-group-addon">                                        
+													<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>                                                     
+                                        <div class="col-sm-12">
+                                            <div class="input-group input-group-sm">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-addon" id="popup27" data-toggle="modal">
+                                                    <span class="glyphicon glyphicon-credit-card"></span>                                        
+                                                </span>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                        
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label3:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 own_padding_null_l">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label4:</strong></div>                                                     
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>
+                                </div>                                                        
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label5:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                      
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label1:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                       
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12"><strong>Label2:</strong></div>
+                                        <div class="col-sm-12"><input type="text" class="form-control input-sm"/></div>   
+                                    </div>
+                                </div>                                                      
+                            </div> 
+                            <div class="row input_row">
+                                <div class="col-sm-12">
+                                    <div class="row">                                        
+                                        <div class="col-xs-12"><strong>Label3:</strong></div>
+                                        <div class="col-xs-12"><input type="text" class="form-control input-sm"/></div>
+                                    </div>                                    
+                                </div>                                                                                                
+                            </div>                                                        
+                        </td>                    
+                    </tr>                    
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-default btn-sm">Add row</button>
+        
+        </div>
+    </div>
+           
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+                        
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">  
+                    
+                    <div class="row">
+                        <div class="col-xs-6">                                            
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 1 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-xs-6">                                          
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 1 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>       
+                    </div>
+                                 
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    
+                    <div class="row">
+                        <div class="col-xs-6">                                          
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 2 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-xs-6">                                           
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 2 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>       
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    
+                    <div class="row">
+                        <div class="col-xs-6">                                             
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 3 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-xs-6">                                           
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 3 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>       
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    
+                    <div class="row">
+                        <div class="col-xs-6">                                            
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Label 4 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-xs-6">                            
+                            <div class="form-group" ng-repeat="counter in counters">
+                                <label class="control-label col-sm-2">Label 4 <span class="pull-right">&nbsp;:</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control input-sm"/>
+                                </div>
+                            </div>                            
+                        </div>       
+                    </div>
+                    
+                </div>
+            </div>            
+            
+        </div>
+    </div>
+            
+    <div class="row own_action_button">                        
+        <div class="col-xs-12 own_button_position">                            
+            <!--<button type="button" class="btn btn-default btn-sm" onclick="window.location.href=''">Save</button>-->
+            <a href="#/detail" class="btn btn-default btn-sm">Save</a>
+            <a href="#/list" class="btn btn-default btn-sm">Cancel</a>
+        </div>
+    </div> 
+
+</form>
