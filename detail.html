@@ -22,7 +22,7 @@
 	</thead>
 	<tbody>		
 		<tr ng-repeat="counter in counters">
-			<td><a href="#">File.zip</a></td>
+			<td><a href="">File.zip</a></td>
 			<td>Data</td>
 			<td>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</td>
 		</tr>		
@@ -42,7 +42,7 @@
         </thead>
         <tbody>            
             <tr ng-repeat="counter in counters">
-                <td><a href="#">File.zip</a></td>
+                <td><a href="">File.zip</a></td>
                 <td>Data</td>
                 <td>Data</td>
             </tr>            
@@ -353,16 +353,16 @@
     <div class="col-xs-12">
 
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        <ul class="nav nav-tabs" role="tablist" ng-init="tab = 1">
+            <li role="presentation" class="active"><a href="" ng-click="tab = 1" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="" ng-click="tab = 2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="" ng-click="tab = 3" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="" ng-click="tab = 4" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="home">  
+            <div role="tabpanel" class="tab-pane active" id="home" ng-show="tab === 1" ng-class="{active: tab === 1}">  
 
                 <div class="row own_detail_data">
                     <div class="col-xs-6" ng-repeat="counter in counters">                                                                
@@ -376,7 +376,7 @@
                 </div>
 
             </div>
-            <div role="tabpanel" class="tab-pane" id="profile">
+            <div role="tabpanel" class="tab-pane" id="profile" ng-show="tab === 2" ng-class="{active: tab === 2}">
 
                 <div class="row own_detail_data">
                     <div class="col-xs-6" ng-repeat="counter in counters">                                    
@@ -390,7 +390,7 @@
                 </div>
 
             </div>
-            <div role="tabpanel" class="tab-pane" id="messages">
+            <div role="tabpanel" class="tab-pane" id="messages" ng-show="tab === 3" ng-class="{active: tab === 3}">
 
                 <div class="row own_detail_data">
                     <div class="col-xs-6" ng-repeat="counter in counters">                                     
@@ -404,7 +404,7 @@
                 </div>
 
             </div>
-            <div role="tabpanel" class="tab-pane" id="settings">
+            <div role="tabpanel" class="tab-pane" id="settings" ng-show="tab === 4" ng-class="{active: tab === 4}">
 
                 <div class="row own_detail_data">
                     <div class="col-xs-6" ng-repeat="counter in counters">                                      

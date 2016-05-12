@@ -167,3 +167,32 @@
   	}	
   .generate_own_nowrap(@n, (@i + 1));
 }
+
+/* LOADER FULLSCREEN */
+
+.modal_loader {					
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0.8;                                   
+	background: #000 url('../img/ring-alt.svg') 50% 50% no-repeat;
+	@media (min-width: 768px) {  
+		&::after {
+			content: "Wait a moment please";
+			color: #fff;
+			padding: 60vh 44.82vw;
+			position: absolute;				
+		}
+	}
+	@media (max-width: 768px) {  
+		&::after {
+			content: "Wait a moment please";
+			color: #fff;
+			padding: 60vh 31vw;
+			position: absolute;				
+		}
+	}
+}
