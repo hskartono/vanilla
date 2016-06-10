@@ -19,8 +19,14 @@
 }
 
 /* use this parameter for change theme */
-@theme: 1;
+@theme: 0;
 
+.theme00() when (@theme = 0) {
+	@import 'general00.less';
+	@import 'table00.less';
+	@import 'bootstrap-theme00.css';
+	@import 'sm-clean00.css';
+}
 .theme01() when (@theme = 1) {
 	@import 'general01.less';
 	@import 'table01.less';
@@ -52,6 +58,7 @@
 	@import 'sm-clean05.css';
 }
 
+.theme00();
 .theme01();
 .theme02();
 .theme03();
