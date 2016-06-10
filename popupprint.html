@@ -84,120 +84,37 @@
 	<script src="amn/js/amn_master.min.js"></script>
 	<script src="amn/js/angular_admintemplate.js"></script>
 
-    <style>
+    <script type="text/javascript">
+        function copyContent() {
+            var content = window.parent.$('#own_content').html();
+            $('.container-fluid').append(content);
+            $('.own_action_button').remove();
+        }
+        $(document).ready(function(){
+            $('#print_doc').click(function(){
+                window.print();
+            });
+        });
+    </script>
+
+    <style media="print">
         body {
-			text-rendering: optimizeLegibility;
-			font-family: 'Arial';
-			background-color: #eeeeee;
+            -webkit-print-color-adjust: exact;
         }
-        #own_login {
-            margin-top: 100px;
+        #print_doc,
+        .alert {
+            display: none;
         }
-        #own_icon {
-            text-align: center;
-        }
-        #own_icon span {
-            font-size: 40pt;
-            padding: 15px;
-            color: #dadada;
-            border: 5px solid #dadada;
-            border-radius: 100%;
-        }
-        button {
-            width: 100%;
-        }
-        small {
-            color: #777;
-        }
-        h2 {
-            color: #dadada;
-            font-family: 'pacificoregular';
+    </style>
+    <style media="screen">
+        #print_doc {
             margin-bottom: 15px;
-        }
-
-        .form-signin {
-          max-width: 330px;
-          padding: 15px;
-          margin: 0 auto;
-        }
-        .form-signin .form-signin-heading,
-        .form-signin .checkbox {
-          margin-bottom: 10px;
-        }
-        .form-signin .checkbox {
-          font-weight: normal;
-        }
-        .form-signin .form-control {
-          position: relative;
-          height: auto;
-          -webkit-box-sizing: border-box;
-             -moz-box-sizing: border-box;
-                  box-sizing: border-box;
-          padding: 10px;
-          font-size: 16px;
-        }
-        .form-signin .form-control:focus {
-          z-index: 2;
-        }
-		.form-signin input[type="text"],
-        .form-signin input[type="email"] {
-          margin-bottom: -1px;
-          border-bottom-right-radius: 0;
-          border-bottom-left-radius: 0;
-        }
-        .form-signin input[type="password"] {
-          margin-bottom: 10px;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-        }
-
-        button.btn-default,
-        a.btn-default {
-            color: #fff;
-            background-color: #6f6f6f;
-            border-color: #6f6f6f;
-        }
-		.btn-default.active.focus,
-		.btn-default.active:focus,
-		.btn-default.active:hover,
-		.btn-default:active.focus,
-		.btn-default:active:focus,
-		.btn-default:active:hover,
-        button.btn-default:hover,
-        button.btn-default:focus,
-		button.btn-default:active,
-        a.btn-default:hover,
-        a.btn-default:focus,
-		a.btn-default:active {
-            color: #fff;
-            background-color: #919191;
-            border-color: #919191;
         }
     </style>
 </head>
-<body>
-
-    <div class="container">
-       <div class="row">
-           <div class="col-xs-12" id="own_login">
-
-                <div id="own_icon">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                </div>
-                <form class="form-signin">
-                    <div class="text-center">
-                        <h2>Punch Coder</h2>
-                    </div>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-default btn-md" type="button" onclick='window.location.href="sitemaster.html#/list"'>Login</button>
-
-                    <a href="#"><small>Forgot Your Password?</small></a>
-                </form>
-
-           </div>
-       </div>
+<body id="own_body_popup" onload="copyContent()">
+    <div class="container-fluid">
+        <button type="button" name="print" class="btn btn-default btn-sm" id="print_doc">Print</button>
     </div>
-
 </body>
 </html>
