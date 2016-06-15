@@ -160,7 +160,8 @@
   }
 
   .sm-clean ul a, .sm-clean.sm-vertical a {
-    white-space: normal;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .sm-clean .sm-nowrap > li > a, .sm-clean .sm-nowrap > li > :not(ul) a {
@@ -421,7 +422,7 @@ ul#main-menu-a ul li a {
     color: #333;
 }
 ul#main-menu-a>li{float:none;}
-ul#main-menu-a>li>a{white-space:normal;}
+ul#main-menu-a>li>a{white-space: nowrap; overflow: hidden;}
 ul#main-menu-a ul.sm-nowrap>li>a{white-space:normal;}
 ul#main-menu-a iframe{display:none;}
 #main-menu-a {

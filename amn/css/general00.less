@@ -150,15 +150,16 @@ label {
     }
 }
 .own_badge_notif {
-    font-size: 8pt;
+	font-size: 8pt;
     background-color: #fff;
     border: 2px solid #dadada;
     color: #FF6600;
     padding: 4px;
-	min-width: 20px;
-    float: right;
-    margin-right: 10px;
-    margin-top: -1px;
+    min-width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+	z-index: 1;
 }
 .generate_own_nowrap(10);
 .generate_own_nowrap(@n, @i: 1) when (@i =< @n) {
@@ -196,4 +197,23 @@ label {
 			position: absolute;
 		}
 	}
+}
+
+/* OTHERS */
+
+.fade_menu::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	content: "";
+	background: rgba(255,255,255,0);
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(85%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
 }
