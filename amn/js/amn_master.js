@@ -43,6 +43,19 @@ $(document).ready(function(){
 
 });
 
+// ADD CLASS FADE MENU
+function addClassFade(id) {
+    var menu_text = $('ul#main-menu-a a#' + id + ' span.m_c').width();
+    var left_content = $('#own_content_left').width();
+    if (menu_text >= 155) {
+        $('ul#main-menu-a a#' + id + ' span.m_c').addClass('fade_menu');
+    } else if (left_content < 224 && menu_text >= 100) {
+        $('ul#main-menu-a a#' + id + ' span.m_c').addClass('fade_menu');
+    } else {
+        $('ul#main-menu-a a#' + id + ' span.m_c').removeClass('fade_menu');
+    }
+}
+
 // ICON FOR COLLAPSE EXPAND
 function iconColExp(id_heading, action, id_collapse, id_expand) {
 	$("#" + id_collapse).show();
