@@ -46,14 +46,18 @@ $(document).ready(function(){
 });
 
 // ADD CLASS FADE MENU
-function addClassFade(id) {
-    var menu_container = $('ul#main-menu-a a#' + id).width();
-    var menu_text = $('ul#main-menu-a a#' + id + ' span.m_c').width();
-    if (menu_text > 155 || (menu_text > 110 && menu_container <= 177)) {
-        $('ul#main-menu-a a#' + id + ' span.m_c').addClass('fade_menu');
-    } else {
-        $('ul#main-menu-a a#' + id + ' span.m_c').removeClass('fade_menu');
-    }
+function addClassFade(sum_ofmenu) {
+    var left_content = $('#own_content_left').width();
+    var listItems = $("ul#main-menu-a li a");
+    listItems.each(function(idx, li) {
+        var product = $(li);
+        var menu_text = product.find('.m_c').width();
+        if (menu_text > 155 || (menu_text > 110 && left_content <= 208)) {
+            product.find('.m_c').addClass('fade_menu');
+        } else {
+            product.find('.m_c').removeClass('fade_menu');
+        }
+    });
 }
 
 // ICON FOR COLLAPSE EXPAND
