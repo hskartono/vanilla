@@ -5,19 +5,21 @@ $(document).ready(function(){
         media: '(max-width: 768px)',
         entry: function() {
             $('#own_content_left').hide();
-            $("#own_content_right").attr("class","col-xs-12 col-sm-12 own_padding_null_any");
+            $("#own_content_left").attr("class","col-xs-12");
+            $("#own_content_right").attr("class","col-xs-12 own_padding_null_any");
         },
         exit: function() {
             $('#own_content_left').show();
-            $("#own_content_right").attr("class","hidden-xs col-sm-10 own_padding_null_any");
+            $("#own_content_left").attr("class","col-xs-2");
+            $("#own_content_right").attr("class","col-xs-10 own_padding_null_any");
         }
     });
     $("#own_panel_button1, #own_panel_button2").click(function() {
         $("#own_content_left").toggle();
         if ($("#own_content_left").css("display") === "none") {
-            $("#own_content_right").attr("class","col-xs-12 col-sm-12 own_padding_null_any");
+            $("#own_content_right").attr("class","col-xs-12 own_padding_null_any");
         } else {
-            $("#own_content_right").attr("class","hidden-xs col-sm-10 own_padding_null_any");
+            $("#own_content_right").attr("class","hidden-xs col-xs-10 own_padding_null_any");
         }
     });
 
@@ -45,11 +47,9 @@ $(document).ready(function(){
 
 // ADD CLASS FADE MENU
 function addClassFade(id) {
+    var menu_container = $('ul#main-menu-a a#' + id).width();
     var menu_text = $('ul#main-menu-a a#' + id + ' span.m_c').width();
-    var left_content = $('#own_content_left').width();
-    if (menu_text >= 155) {
-        $('ul#main-menu-a a#' + id + ' span.m_c').addClass('fade_menu');
-    } else if (left_content < 224 && menu_text >= 100) {
+    if (menu_text > 155 || (menu_text > 110 && menu_container <= 177)) {
         $('ul#main-menu-a a#' + id + ' span.m_c').addClass('fade_menu');
     } else {
         $('ul#main-menu-a a#' + id + ' span.m_c').removeClass('fade_menu');
