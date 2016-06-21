@@ -114,7 +114,7 @@
 
 .navbar-default {
     background-color: #fff;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: none;
     border-bottom: 1px solid #cbcbcb;
 }
 .navbar {
@@ -146,6 +146,13 @@
 
 .panel {
     margin-bottom: 15px;
+}
+.panel-default {
+    border-color: #cbcbcb;
+}
+.panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 /* WELL */
