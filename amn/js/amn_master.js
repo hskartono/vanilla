@@ -45,8 +45,14 @@ $(document).ready(function(){
 
 });
 
+$(window).resize(function() {
+
+    addClassFade();
+
+});
+
 // ADD CLASS FADE MENU
-function addClassFade(sum_ofmenu) {
+function addClassFade() {
     var left_content = $('#own_content_left').width();
     var listItems = $("ul#main-menu-a li a");
     listItems.each(function(idx, li) {
