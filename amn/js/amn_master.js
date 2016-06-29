@@ -45,27 +45,6 @@ $(document).ready(function(){
 
 });
 
-$(window).resize(function() {
-
-    addClassFade();
-
-});
-
-// ADD CLASS FADE MENU
-function addClassFade() {
-    var left_content = $('#own_content_left').width();
-    var listItems = $("ul#main-menu-a li a");
-    listItems.each(function(idx, li) {
-        var product = $(li);
-        var menu_text = product.find('.m_c').width();
-        if (menu_text > 155 || (menu_text > 110 && left_content <= 208)) {
-            product.find('.m_c').addClass('fade_menu');
-        } else {
-            product.find('.m_c').removeClass('fade_menu');
-        }
-    });
-}
-
 // ICON FOR COLLAPSE EXPAND
 function iconColExp(id_heading, action, id_collapse, id_expand) {
 	$("#" + id_collapse).show();
