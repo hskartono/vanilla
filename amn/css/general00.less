@@ -40,10 +40,14 @@ label {
 }
 .own_action_button {
     margin-top: 20px;
-    small {
-        margin-left: 15px;
-        display: inline-block;
-    }
+	small {
+		display: inline-block;
+	}
+    @media screen and (min-width: 480px) {
+		small {
+	        margin-left: 15px;
+	    }
+	}
 }
 #own_footer {
     text-align: left;
@@ -68,11 +72,20 @@ label {
     }
 }
 #own_username {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+	line-height: 16px;
+    display: inline-block;
+    font-size: 9pt;
+    text-align: right;
 }
 #own_menu_profile {
     padding: 5px 5px;
+	img { vertical-align: bottom; }
+	.caret {
+		margin-top: 7px;
+    	vertical-align: top;
+	}
 }
 #own_content_left {
 	// min-width: 224.83px;

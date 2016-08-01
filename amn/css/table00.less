@@ -136,7 +136,7 @@ table {
     }
     .action {
         .style_td_action();
-    }    
+    }
     @media (min-width: 768px) {
         .input-group-addon, .input-group-btn { width: 0%; }
     }
@@ -195,10 +195,10 @@ table {
     @media print {
         .table_style();
     }
-    @media (min-width: 768px) {
+    @media (min-width: 480px) {
         .table_style();
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
         th, td {
             margin: 1.5em 1em;
         }
@@ -227,8 +227,6 @@ table {
             }
         }
         tr {
-            // display: block;
-            // .box-shadow(0px 0px 3px 0px rgba(0,0,0,0.3));
             border: 1px solid #b8b8b8;
             &:nth-of-type(odd) {
                 background: #eee;
