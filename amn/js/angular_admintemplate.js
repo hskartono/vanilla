@@ -3,6 +3,10 @@ angular.module('adminTemplateApp', ['ngRoute'])
 .config(function($routeProvider){
 
 	$routeProvider
+	.when("/home", {
+		templateUrl: "home.html",
+		controller: "atController"
+	})
 	.when("/list", {
 		templateUrl: "list.html",
 		controller: "atController"
