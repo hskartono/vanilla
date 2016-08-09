@@ -12,9 +12,7 @@ const DEST_CSS = 'amn/css/';
 const SRC_JS = 'amn/js/';
 const SRC_CSS = 'amn/css/';
 
-gulp.task('default', function(){
-    console.log('okeh jalan');
-});
+gulp.task('default', ['watch']);
 
 gulp.task('less-minify-css', function(){
     gulp.src(SRC_CSS + 'master.less')
