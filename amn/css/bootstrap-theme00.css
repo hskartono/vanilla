@@ -55,9 +55,11 @@
 .modal-header {
     cursor: move;
 }
+label.radio-inline,
+div.checkbox,
 .control-label,
 .form-control-static {
-    font-size: 12px;
+    font-size: 9pt;
 }
 /*.form-inline .form-control {
     width: 92%;
@@ -156,6 +158,9 @@
 .panel {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+h4.panel-title {
+    font-size: inherit;
 }
 
 /* WELL */

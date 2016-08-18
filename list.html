@@ -37,7 +37,20 @@
         <a href="#/input" class="btn btn-default btn-sm">Create</a>
     </div>
     <div class="col-sm-7 col-sm-pull-5">
-        <own-paging></own-paging>
+        <ul class="pagination pagination-sm">
+        	<li class="disabled">
+        		<a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        	</li>
+        	<li class="active"><a href="#">1</a></li>
+        	<li><a href="#">2</a></li>
+        	<li><a href="#">3</a></li>
+        	<li><a href="#">4</a></li>
+        	<li><a href="#">5</a></li>
+        	<li>
+        		<a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        	</li>
+        </ul>
+        <small>Page 1 of 20 (total rows : 45)</small>
     </div>
 </div>
 
@@ -51,14 +64,19 @@
 <table class="rwd_table_wb table-hover" id="index_table">
     <thead>
         <tr>
-            <th></th>
+            <th>No.</th>
             <th>Heading1</th>
             <th>Heading2</th>
             <th>Heading3</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="counter in counters">
+        <tr>
+            <td class="action">1</td>
+            <td><a href="#/detail" title="Detail">Data</a></td>
+            <td>Data</td>
+            <td>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</td>
             <td class="action">
                 <a href="#/input" class="btn btn-default btn-xs" title="Edit">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -67,9 +85,6 @@
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                 </button>
             </td>
-            <td><a href="#/detail" title="Detail">Data</a></td>
-            <td>Data</td>
-            <td>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</td>
         </tr>
     </tbody>
 </table>
@@ -82,6 +97,19 @@
         <a href="#/input" class="btn btn-default btn-sm">Create</a>
     </div>
     <div class="col-sm-7 col-sm-pull-5">
-        <own-paging></own-paging>
+        <ul class="pagination pagination-sm">
+        	<li class="disabled">
+        		<a href="#"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+        	</li>
+        	<li class="active"><a href="#">1</a></li>
+        	<li><a href="#">2</a></li>
+        	<li><a href="#">3</a></li>
+        	<li><a href="#">4</a></li>
+        	<li><a href="#">5</a></li>
+        	<li>
+        		<a href="#"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        	</li>
+        </ul>
+        <small>Page 1 of 20 (total rows : 45)</small>
     </div>
 </div>

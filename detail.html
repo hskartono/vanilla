@@ -3,7 +3,7 @@
     <p>Successfully, data has been saved.</p>
 </div>
 
-<div class="row own_detail_data" ng-repeat="counter in counters">
+<div class="row own_detail_data">
     <div class="col-xs-12 col-sm-6">
         <label class="col-xs-3 control-label">Label<span>&nbsp;:</span></label>
         <div class="col-xs-9">Data</div>
@@ -42,7 +42,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="counter in counters">
+		<tr>
 			<td><a href="">File.zip</a></td>
 			<td>Data</td>
 			<td>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</td>
@@ -56,12 +56,16 @@
     <table class="table_list table-hover">
         <thead>
             <tr>
-                <th ng-repeat="counter in counters">This is heading or title</th>
+                <th>This is heading or title</th>
+                <th>This is heading or title</th>
+                <th>This is heading or title</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="counter in counters">
-                <td ng-repeat="counter in counters">Data dummy or example</td>
+            <tr>
+                <td>Data dummy or example</td>
+                <td>Data dummy or example</td>
+                <td>Data dummy or example</td>
             </tr>
         </tbody>
     </table>
@@ -83,7 +87,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="counter in counters">
+        <tr>
             <td>
                 <div class="row input_row">
                     <label class="col-sm-4 control-label">Label1<span>&nbsp;:</span></label>

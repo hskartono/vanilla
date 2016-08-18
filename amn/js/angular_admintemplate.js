@@ -11,6 +11,10 @@ angular.module('adminTemplateApp', ['ngRoute'])
 		templateUrl: "list.html",
 		controller: "atController"
 	})
+	.when("/listempty", {
+		templateUrl: "listempty.html",
+		controller: "atController"
+	})
 	.when("/input", {
 		templateUrl: "input.html",
 		controller: "atController"
@@ -31,16 +35,7 @@ angular.module('adminTemplateApp', ['ngRoute'])
 
 .controller('atController', ['$scope','$http','$timeout', function($scope, $http, $timeout){
 
-	$scope.counters = [{index:'1'}, {index:'2'}, {index:'3'}];
-
-	/*$scope.$on('$viewContentLoaded', function(){
-    	$scope.calender('datepicker_td30');
-		$scope.calender('datepicker_td31');
-		$scope.calender('datepicker_td32');
-  	});*/
-
 	$scope.calender = function(input_calender) {
-		//console.log(input_calender);
 		calenderPicker(input_calender);
     };
 
@@ -84,10 +79,3 @@ angular.module('adminTemplateApp', ['ngRoute'])
     });
 
 }])
-
-.directive('ownPaging', function() {
-	return {
-		restrict: 'E',
-		templateUrl: 'd_paging.html'
-	};
-});
