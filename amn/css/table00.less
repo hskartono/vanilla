@@ -36,7 +36,7 @@
     vertical-align: top;
     white-space: nowrap;
     height: 33px;
-    width: 0;
+    width: 1%;
 }
 
 /* GENERAL TABLE */
@@ -93,28 +93,6 @@ table {
 	}
 }
 
-/* TABLE ADD ROW */
-
-.table_add_row {
-	width: auto;
-    margin: 10px 0px 5px 0px;
-    tr { .style_tr(); }
-    th { .style_th(); }
-    td {
-        .style_td();
-        &:not(.action) {
-            padding: 4px;
-            vertical-align: top;
-            a { .style_a(); }
-        }
-    }
-    .action { .style_td_action(); }
-    @media (min-width: 768px) {
-        .input-group-addon,
-        .input-group-btn { width: 0%; }
-    }
-}
-
 /* RWD TABLE */
 
 .rwd_table {
@@ -124,7 +102,6 @@ table {
     th { .style_th(); }
     .table_style() {
         margin: 5px 0;
-        .input-group-addon, .input-group-btn { width: 0%; }
         .input-group { width: 100%; }
         tr { .style_tr(); }
         th, td { display: table-cell; }
