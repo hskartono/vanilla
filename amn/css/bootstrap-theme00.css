@@ -64,6 +64,17 @@ div.checkbox,
 /*.form-inline .form-control {
     width: 92%;
 }*/
+.checkbox label {
+    display: inline;
+    vertical-align: sub;
+}
+label.radio-inline > input[type="radio"] {
+    margin-top: 8px;
+}
+label.radio-inline {
+    display: inline;
+    vertical-align: sub;
+}
 
 /* TAB */
 
