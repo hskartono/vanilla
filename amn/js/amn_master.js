@@ -237,30 +237,26 @@ function tableResponsive(id_table) {
     }
 }
 
-$(document).ready(function(){    
+$(document).ready(function(){
     $(document).click(function (e) {
         if (e.target === $('#my_modal')[0] && $('body').hasClass('modal-open')) {
             removeModal();
         }
     })
 });
-function removeModal() {    
+function removeModal() {
     $(".modal").remove();
-    $(".modal-backdrop").remove();   
+    $(".modal-backdrop").remove();
     $("body").removeClass("modal-open");
     $("body").css({
-        "overflow-y":"scroll", 
+        "overflow-y":"scroll",
         "padding-right":"0px"
-    });         
+    });
 }
-function showPopup(url, title, height, width) {    
-    var min_height = "80vh";
-	var min_width = "95vw";
-			
-	if (isNaN(height)) height = min_height;
-	if (isNaN(width)) width = min_width;
-    
-    var html = 
+function showPopup(url, title, height, width) {
+    var height = typeof height !== 'undefined' ?  height : "80vh";
+    var width = typeof width !== 'undefined' ?  width : "95vw";
+    var html =
         '<div id="my_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
             '<div class="modal-dialog" role="document" style="width:' + width + ';">' +
                 '<div class="modal-content">' +
@@ -276,19 +272,19 @@ function showPopup(url, title, height, width) {
                 '</div>' +
             '</div>' +
         '</div>';
-    
+
     $(document).keyup(function(e) {
         if (e.keyCode == 27) { // escape key maps to keycode `27`
             removeModal();
         }
-    }); 
-    
-    $("body").append(html);     
+    });
+
+    $("body").append(html);
     $("body").css({
-        "overflow":"hidden", 
+        "overflow":"hidden",
         "padding-right":"17px"
     });
-    $(".modal").modal({backdrop: 'static', keyboard: true});  
+    $(".modal").modal({backdrop: 'static', keyboard: true});
     $(".modal-dialog").draggable({
           handle: ".modal-header"
     });
@@ -315,7 +311,7 @@ function preventDefault(e) {
   e = e || window.event;
   if (e.preventDefault)
       e.preventDefault();
-  e.returnValue = false;  
+  e.returnValue = false;
 }
 function keydown(e) {
     for (var i = keys.length; i--;) {
@@ -339,5 +335,5 @@ function enable_scroll() {
     if (window.removeEventListener) {
         window.removeEventListener('DOMMouseScroll', wheel, true);
     }
-    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;
 }
