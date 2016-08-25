@@ -1,8 +1,8 @@
 // main: master.less
 @table_th_bg: #eee;
 @table_th_fc: #333;
-@table_row_even: #fff;
-@table_row_odd: #fff;
+@table_row_even: transparent;
+@table_row_odd: transparent;
 @font_size_th: 13px;
 @font_size_td: 12px;
 @border_table: 1px solid #dbdbdb;
@@ -53,6 +53,18 @@ table {
     td.w6 { min-width: 50px; }
 }
 
+/* TABLE DETAIL */
+
+.table_detail {
+	tr {
+        line-height: 35px;
+		td {
+			padding-right: 20px;
+			font-size: @font_size_td;
+		}
+	}
+}
+
 /* TABLE LIST */
 
 .table_list {
@@ -79,18 +91,6 @@ table {
 	.table_list();
 	table-layout: fixed;
 	td { word-wrap: break-word; }
-}
-
-/* TABLE DETAIL */
-
-.table_detail {
-	tr {
-        line-height: 35px;
-		td {
-			padding-right: 20px;
-			font-size: @font_size_td;
-		}
-	}
 }
 
 /* RWD TABLE */

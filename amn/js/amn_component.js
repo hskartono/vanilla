@@ -99,7 +99,7 @@ function leftMenuDetect() {
 
 // SET CURRENT MENU
 function setCurrentMenu(id_menu) {
-    $('#main-menu-a').smartmenus('itemActivate', $('a#'+ id_menu).addClass('own_highlighted'));
+    $('#main-menu-a').smartmenus('itemActivate', $('a#'+ id_menu).addClass('current'));
     var id_menu_slice = id_menu.slice(0,-1);
     for (i = 1; i <= (id_menu_slice.length - 2); i++) {
         $('a#m_' + id_menu.substr(2,i)).removeClass('highlighted');

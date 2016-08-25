@@ -131,7 +131,7 @@ label.radio-inline {
 .navbar-default {
     background-color: #fff;
     box-shadow: none;
-    border-bottom: 1px solid #cbcbcb;
+    border-bottom: 1px solid #e2e2e2;
 }
 .navbar {
     margin-bottom: 5px;
@@ -162,13 +162,11 @@ label.radio-inline {
 
 .panel {
     margin-bottom: 15px;
-}
-.panel-default {
-    border-color: #cbcbcb;
-}
-.panel {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.panel-default {
+    border-color: #e2e2e2;
 }
 h4.panel-title {
     font-size: inherit;
@@ -191,6 +189,111 @@ h4.panel-title {
 
 /* TABLE */
 
+table > thead > tr > td.active,
+table > tbody > tr > td.active,
+table > tfoot > tr > td.active,
+table > thead > tr > th.active,
+table > tbody > tr > th.active,
+table > tfoot > tr > th.active,
+table > thead > tr.active > td,
+table > tbody > tr.active > td,
+table > tfoot > tr.active > td,
+table > thead > tr.active > th,
+table > tbody > tr.active > th,
+table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+table > tbody > tr > td.active:hover,
+table > tbody > tr > th.active:hover,
+table > tbody > tr.active:hover > td,
+table > tbody > tr:hover > .active,
+table > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+table > thead > tr > td.success,
+table > tbody > tr > td.success,
+table > tfoot > tr > td.success,
+table > thead > tr > th.success,
+table > tbody > tr > th.success,
+table > tfoot > tr > th.success,
+table > thead > tr.success > td,
+table > tbody > tr.success > td,
+table > tfoot > tr.success > td,
+table > thead > tr.success > th,
+table > tbody > tr.success > th,
+table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+table > tbody > tr > td.success:hover,
+table > tbody > tr > th.success:hover,
+table > tbody > tr.success:hover > td,
+table > tbody > tr:hover > .success,
+table > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+table > thead > tr > td.info,
+table > tbody > tr > td.info,
+table > tfoot > tr > td.info,
+table > thead > tr > th.info,
+table > tbody > tr > th.info,
+table > tfoot > tr > th.info,
+table > thead > tr.info > td,
+table > tbody > tr.info > td,
+table > tfoot > tr.info > td,
+table > thead > tr.info > th,
+table > tbody > tr.info > th,
+table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+table > tbody > tr > td.info:hover,
+table > tbody > tr > th.info:hover,
+table > tbody > tr.info:hover > td,
+table > tbody > tr:hover > .info,
+table > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+table > thead > tr > td.warning,
+table > tbody > tr > td.warning,
+table > tfoot > tr > td.warning,
+table > thead > tr > th.warning,
+table > tbody > tr > th.warning,
+table > tfoot > tr > th.warning,
+table > thead > tr.warning > td,
+table > tbody > tr.warning > td,
+table > tfoot > tr.warning > td,
+table > thead > tr.warning > th,
+table > tbody > tr.warning > th,
+table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+table > tbody > tr > td.warning:hover,
+table > tbody > tr > th.warning:hover,
+table > tbody > tr.warning:hover > td,
+table > tbody > tr:hover > .warning,
+table > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+table > thead > tr > td.danger,
+table > tbody > tr > td.danger,
+table > tfoot > tr > td.danger,
+table > thead > tr > th.danger,
+table > tbody > tr > th.danger,
+table > tfoot > tr > th.danger,
+table > thead > tr.danger > td,
+table > tbody > tr.danger > td,
+table > tfoot > tr.danger > td,
+table > thead > tr.danger > th,
+table > tbody > tr.danger > th,
+table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+table > tbody > tr > td.danger:hover,
+table > tbody > tr > th.danger:hover,
+table > tbody > tr.danger:hover > td,
+table > tbody > tr:hover > .danger,
+table > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
 @media screen and (max-width: 767px) {}
     .table-responsive {
         border: none;
