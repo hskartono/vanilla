@@ -216,7 +216,8 @@ function fileStyle(id_input) {
         icon: true,
         iconName: "glyphicon glyphicon-paperclip",
         buttonText: "",
-        size: "sm"
+        size: "sm",
+        placeholder: "No file"
     });
 }
 
