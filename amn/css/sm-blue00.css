@@ -86,7 +86,9 @@
 .sm-blue ul li:first-child {
   border-top: 0;
 }
-
+@media (max-width: 768px) {
+    .sm-blue a span.sub-arrow { padding-top: 5px; }
+}
 @media (min-width: 768px) {
   /* Switch to desktop layout
   -----------------------------------------------
