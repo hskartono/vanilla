@@ -29,13 +29,9 @@ label {
     padding: 15px 15px 0px 15px;
 }
 .own_button_position {
-	@media (min-width:768px) {
-		text-align: right;
-	}
+	@media (min-width:768px) { text-align: right; }
     @media (max-width:768px) {
-        a, button {
-            margin-bottom: 5px;
-        }
+        a, button { margin-bottom: 5px; }
     }
 }
 .own_header_left {
@@ -51,9 +47,7 @@ label {
 		}
 	}
     @media screen and (max-width: 480px) {
-		small {
-	        display: inline-block;
-	    }
+		small { display: inline-block; }
 	}
 }
 #own_footer {
@@ -74,9 +68,7 @@ label {
 #own_dropdown_personal {
     margin-top: 2px;
     margin-bottom: 2px;
-    @media (min-width: 768px) {
-        margin-right: 15px;
-    }
+    @media (min-width: 768px) { margin-right: 15px; }
 }
 #own_username {
     margin-left: 10px;
@@ -95,10 +87,10 @@ label {
 	}
 }
 #own_content_left {
-	// min-width: 224.83px;
     padding: 0px;
     background-color: #fff;
     min-height: 100vh;
+	height: 100%;
     border-right: 1px solid #e2e2e2;
 }
 #own_content_right {
@@ -110,65 +102,34 @@ label {
     vertical-align: super;
     margin-left: 5px;
 }
-.own_input_right {
-    border-right: 0px solid;
-}
-.own_input_left {
-    border-left: 0px solid;
-}
-.own_currency_symbol:before {
-    content: '';
-}
-#own_div_search {
-    margin-top: 15px;
-}
-.own_cursor_pointer {
-    cursor: pointer;
-}
-.own_padding_null_any {
-    padding: 0px;
-}
-.own_padding_null_l_any {
-    padding-left: 0px;
-}
-.own_padding_null_r_any {
-    padding-right: 0px;
-}
+.own_input_right { border-right: 0px solid; }
+.own_input_left { border-left: 0px solid; }
+.own_currency_symbol:before { content: ''; }
+#own_div_search { margin-top: 15px; }
+.own_cursor_pointer { cursor: pointer; }
+.own_padding_null_any { padding: 0px; }
+.own_padding_null_l_any { padding-left: 0px; }
+.own_padding_null_r_any { padding-right: 0px; }
 @media (min-width:768px) {
-    .own_padding_null {
-        padding: 0px;
-    }
-    .own_padding_null_l {
-        padding-left: 0px;
-    }
-    .own_padding_null_r {
-        padding-right: 0px;
-    }
+    .own_padding_null { padding: 0px; }
+    .own_padding_null_l { padding-left: 0px; }
+    .own_padding_null_r { padding-right: 0px; }
 }
 @media (max-width:768px) {
-    .own_range {
-        margin-bottom: 5px;
-    }
+    .own_range { margin-bottom: 5px; }
 }
 .own_detail_data {
     font-size: 12px;
-    > div {
+    div {
         padding: 0px;
-        > div {
-            margin-bottom: 10px;
-        }
-		@media (max-width:768px) {
-			margin-bottom: 10px;
-		}
+        div { margin-bottom: 5px; }
     }
 }
 .own_logo {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    img {
-        width: 100px;
-    }
+    img { width: 100px; }
 }
 .own_badge_notif {
 	font-size: 8pt;
