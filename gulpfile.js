@@ -14,7 +14,7 @@ const SRC_CSS = 'amn/css/';
 
 gulp.task('default', ['watch']);
 
-gulp.task('less-minify-css', function(){
+gulp.task('minify-css', function(){
     gulp.src(SRC_CSS + 'master.less')
         .pipe(less())
         .pipe(clean_css({
@@ -36,5 +36,5 @@ gulp.task('minify-js', function(){
 
 gulp.task('watch', function(){
     gulp.watch(ALL_JS_PATH, ['minify-js']);
-    gulp.watch(ALL_CSS_PATH, ['less-minify-css']);
+    gulp.watch(ALL_CSS_PATH, ['minify-css']);
 });
