@@ -30,6 +30,7 @@ $(document).ready(function(){
             leftMenuDetect();
         }
     });
+    leftMenuDetect();
 
     // accordion menu
     $('#main-menu-a').smartmenus({
@@ -89,7 +90,7 @@ less = {
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) { }
 
 // SET HEIGHT LEFT MENU
-function leftMenuDetect() {    
+function leftMenuDetect() {
     if ($("#own_content_right").height() > $(window).height()) {
         $('#own_content_left').css({'height':($('#own_content_right').height() + 2)});
     }
