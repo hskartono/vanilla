@@ -43,6 +43,9 @@
 
 /* FORM */
 
+.control-label sup {
+    top: 0.5em;
+}
 .own_detail_data label.control-label,
 .input_row label.control-label,
 .form-group label.control-label {
