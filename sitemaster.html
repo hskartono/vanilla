@@ -56,6 +56,9 @@
 	<!-- media check -->
 	<script src="bower_components/mediaCheck/js/mediaCheck-min.js"></script>
 
+    <!-- float thead -->
+	<script src="bower_components/jquery.floatThead/dist/jquery.floatThead.min.js"></script>
+
 	<!-- angular -->
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular/angular-route.min.js"></script>
@@ -81,7 +84,7 @@
 
             <!-- left menu accordion -->
             <ul id="main-menu-a" class="sm sm-vertical sm-clean">
-                <li><a href="#/home" id="m_1">Home</a></li>
+                <li><a href="" id="m_1">Home</a></li>
                 <li>
 					<a href="" id="m_2">Privilege Management Management<span class="badge own_badge_notif">42</span></a>
                     <ul>
@@ -106,25 +109,22 @@
 
             <!-- left menu flyout -->
             <ul id="main-menu-f" class="sm sm-vertical sm-clean">
-                <li><a href="">Home</a></li>
+                <li><a href="#/table">Table</a></li>                
                 <li>
-					<a href="">Privilege Management</a>
+					<a href="">Sample Page</a>
                     <ul>
+                        <li><a href="#/home">Home</a></li>
+                        <li><a href="#/listempty">List Empty</a></li>
                         <li>
-                            <a href="">Users Management</a>
+                            <a href="">CRUD</a>
                             <ul>
-                                <li><a href="">List of Data</a></li>
-                                <li><a href="">Add New</a></li>
+                                <li><a href="#/list">List</a></li>
+                                <li><a href="#/input">Input</a></li>
+                                <li><a href="#/detail">Detail</a></li>
                             </ul>
                         </li>
-                        <li><a href="">User Groups Management</a></li>
-                        <li><a href="">Function Management</a></li>
-                        <li><a href="">Module Management</a></li>
                     </ul>
                 </li>
-                <li><a href="">Master Data</a></li>
-                <li><a href="">Transaction</a></li>
-                <li><a href="">Report</a></li>
             </ul>
 
         </div>
