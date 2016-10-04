@@ -43,6 +43,16 @@
 
 /* FORM */
 
+label.control-label span:before { content: "\00a0"; }
+.form-group a,
+table a {
+    color: #1A41BA;
+    text-decoration: underline;
+}
+.form-group a:hover,
+table a:hover {
+    color: #d71d10;
+}
 .control-label sup {
     top: 0.5em;
 }

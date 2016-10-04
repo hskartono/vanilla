@@ -27,6 +27,10 @@ angular.module('adminTemplateApp', ['ngRoute'])
 		templateUrl: "popup.html",
 		controller: "atController"
 	})
+    .when("/table", {
+		templateUrl: "table.html",
+		controller: "atController"
+	})
 	.otherwise({
 		redirectTo: "/"
 	});
